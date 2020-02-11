@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30vh;
+  background-color: aliceblue;
+}
+
+#cardList {
+  height: 130px;
+  width: 800px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card {
+  display: inline-block;
+  background-color: red;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 100px;
+  height: 130px;
+}
+
+.card > img {
+  width: 100px;
+  height: 130px;
+}
+
+.arrow-down {
+  margin-left: 380px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
+}
+#dialog-msg > img {
+  width: 150px;
+  height: 150px;
+}
+#dialog-msg {
+  text-align: center;
+}
+
+.number {
+  background-image: url("unnamed.jpg");
+  background-size: 458px;
+}
+
+.number1 {
+  background-position: 0 0;
+}
+.number2 {
+  background-position: -91px 0;
+}
+.number3 {
+  background-position: -184px 0;
+}
+.number4 {
+  background-position: -273px 0;
+}
+.number5 {
+  background-position: -364px 0;
+}
+.number6 {
+  background-position: 0 -123px;
+}
+.number7 {
+  background-position: -91px -123px;
+}
+.number8 {
+  background-position: -184px -123px;
+}
+.number9 {
+  background-position: -273px -123px;
+}
+.number0 {
+  background-position: -364px -123px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
