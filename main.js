@@ -3,10 +3,10 @@ function reset() {
   var preNum = '';
   for (var i = 0; i < 210; i++) {
     var rand = ~~(Math.random() * 10);
-	while(preNum == rand){
-		rand = ~~(Math.random() * 10);
-	}
-	preNum = rand;
+    while (preNum == rand) {
+      rand = ~~(Math.random() * 10);
+    }
+    preNum = rand;
     var element = '<div class="card" style="background-color: purple;" id=itemNumber' + i + '>' + `<img class="number number${rand}">` + '</div>';
 
     $('#cardList').append(element);
@@ -15,6 +15,7 @@ function reset() {
 }
 
 function openCase() {
+  $("#roll").attr("disabled", true);
   reset();
   var rand = random(1000, 20000);
   var childNumber = Math.floor(rand / 100) + 4;
@@ -36,6 +37,7 @@ function openCase() {
       draggable: false,
       width: 400,
     });
+    $("#roll").attr("disabled", false);
   });
 }
 
